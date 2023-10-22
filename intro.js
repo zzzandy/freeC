@@ -176,7 +176,152 @@ const wordBlanks = myNoun + ' ' + myVerb + ' ' + myAdjective + ' ' + myAdverb; /
 // Only change code above this line
 
 // #36
+let count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  switch(card){
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:  count++; break;
+
+    case 7:
+    case 8:
+    case 9:; break;
+
+    case 10:
+    case 'J':
+    case 'Q':
+    case 'K':
+    case 'A':  count--; break;
+  }
+
+   if (count > 0){
+      return `${ count } Bet`
+    }
+    else if (count <= 0) {
+      return `${ count } Hold`
+    }
+    
+  return "Change Me";
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+// #37
+const myDog = {
+    // Only change code below this line
+    name: "test",
+    legs: 4,
+    tails: 1,
+    friends: ['Test', 'test2'],
+  
+    // Only change code above this line
+  }
+
+// #38
+
+// Setup
+const testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+  };
+  
+  // Only change code below this line
+  const hatValue = testObj.hat;      // Change this line
+  const shirtValue = testObj.shirt;    // Change this line
+
+// #39
+// Setup
+const testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+  };
+  
+  // Only change code below this line
+  const entreeValue = testObj['an entree'];   // Change this line
+  const drinkValue = testObj['the drink'];    // Change this line
+
+// #40
+// Setup
+const testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+  };
+  
+  // Only change code below this line
+  const playerNumber = 16;  // Change this line
+  const player = testObj[playerNumber];   // Change this line
+
+// #41
+// Setup
+const myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+  };
+  
+  // Only change code below this line
+  myDog.name = 'Happy Coder';
+
+// #42
+
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+  };
+  
+  myDog.bark = 'woof';
+
+// #43
+// Setup
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+  };
+  
+  // Only change code below this line
+  delete myDog.tails;
+
+// #44
+
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+
+  let lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank",
+  }
+  result = lookup[val]
+
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+// #45
 
 
-// #30
-// #30
+// #40
+// #40
+// #40
+// #40
