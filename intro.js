@@ -319,9 +319,245 @@ function phoneticLookup(val) {
 
 phoneticLookup("charlie");
 // #45
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+  if (obj.hasOwnProperty(checkProp)){
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }  
+  // Only change code above this line
+}
+
+// #46
+
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+   {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+];
+
+// #47
+
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside['glove box'];
+
+// #48
+
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1];
+
+// #49
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+let i = 0;
+while ( i <= 5) {
+  myArray.push(i);
+  i++;
+}
+console.log(myArray)
+
+myArray.reverse()
+console.log(myArray)
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+let i = 5;
+while ( i >= 0) {
+  myArray.push(i);
+  i--;
+}
+console.log(myArray)
+
+//myArray.reverse()
+console.log(myArray)
+
+// #50
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 1; i <= 5; i++){
+  myArray.push(i)
+}
+
+console.log(myArray)
+
+// #51
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 1; i < 10; i += 2){
+  myArray.push(i)
+}
+console.log(myArray)
+
+// #52
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 9; i >= 1; i-= 2){
+  myArray.push(i)
+}
+console.log(myArray)
+
+// #53
+
+// Setup
+const myArr = [2, 3, 4, 5, 6];
+
+// Only change code below this line
+
+let total = 0;
+for( let i = 0; i <= myArr.length - 1; i++){
+  total += myArr[i];
+  console.log(total)
+}
+
+console.log(total)
+
+// #54
+
+function multiplyAll(arr) {
+  let product = 1;
+  // Only change code below this line
+  for(let i = 0; i <= arr.length - 1; i++){
+    //console.log(arr[i])
+    for (let j = 0; j <= arr[i].length - 1; j++){
+      //console.log(arr[i][j])
+      product *= arr[i][j]
+    }
+    console.log(product)
+
+  }
+  // Only change code above this line
+  return product;
+}
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+// #55
+
+// Setup
+const myArray = [];
+let i = 10;
+
+// Only change code below this line
+
+do{
+  myArray.push(i);
+  i++;
+}
+while(i == 10)
+
+// #56
+// Setup
+const recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+// Only change code below this line
+function updateRecords(records, id, prop, value) {
+  if(!value){
+    delete records[id][prop]
+  }
+
+  if(prop !== 'tracks' && prop && value){
+    records[id][prop] = value;
+  }
+
+  if(prop === 'tracks' && prop && value){
+     if(!records[id].hasOwnProperty(prop)){
+      records[id][prop] = [];
+    }
+    if(records[id].hasOwnProperty(prop)){
+      records[id][prop].push(value)
+    }
+
+  }
+
+  return records;
+}
+
+//updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+updateRecords(recordCollection, 5439, 'artist', '');
+
+// #50
+// #50
 
 
-// #40
-// #40
-// #40
-// #40
+
