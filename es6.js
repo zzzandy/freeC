@@ -269,3 +269,62 @@ stringFunctions.lowercaseString("WORLD!");
 
 // #24
 
+export default function subtract(x, y) {
+    return x - y;
+  }
+
+// #25
+
+import subtract from './math_functions.js'
+// Only change code above this line
+
+subtract(7,4);
+
+// #26
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  
+})
+
+// #27
+
+const makeServerRequest = new Promise((resolve, reject) => {
+    // responseFromServer represents a response from a server
+    let responseFromServer;
+      
+    if(responseFromServer) {
+      resolve('We got the data') 
+    } else {  
+      reject('Data not received')
+    }
+  });
+
+  // #28
+
+  const makeServerRequest = new Promise((resolve, reject) => {
+    // responseFromServer is set to true to represent a successful response from a server
+    let responseFromServer = true;
+      
+    if(responseFromServer) {
+      resolve("We got the data");
+    } else {  
+      reject("Data not received");
+    }
+  }).then(result => console.log(result));
+
+  // #29 
+
+  const makeServerRequest = new Promise((resolve, reject) => {
+    // responseFromServer is set to false to represent an unsuccessful response from a server
+    let responseFromServer = false;
+      
+    if(responseFromServer) {
+      resolve("We got the data");
+    } else {  
+      reject("Data not received");
+    }
+  }).catch(error => console.log(error));
+  
+  makeServerRequest.then(result => {
+    console.log(result);
+  });
