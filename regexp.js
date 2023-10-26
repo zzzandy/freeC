@@ -106,3 +106,98 @@ let result = lastRegex.test(caboose);
 
 // #18
 
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;
+
+// #19
+
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; // Change this line
+let result = quoteSample.match(nonAlphabetRegex).length;
+
+// #20 
+
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;
+
+// #21
+
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let result = movieName.match(noNumRegex).length;
+
+// #22
+
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/gi; // Change this line
+let result = userCheck.test(username);
+
+// #23
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let result = sample.match(countWhiteSpace);
+
+// #24
+
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line
+let result = sample.match(countNonWhiteSpace);
+
+// #25
+
+let ohStr = "Ohhh no";
+let ohRegex = /oh{3,6}\sno/gi; // Change this line
+let result = ohRegex.test(ohStr);
+
+// #26
+
+let haStr = "Hazzzzah";
+let haRegex = /\w\wz{4,}\w*/; // Change this line
+let result = haRegex.test(haStr);
+
+// #27 
+
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/gi; // Change this line
+let result = timRegex.test(timStr);
+
+// #28 
+
+let favWord = "favorite";
+let favRegex = /\w{4}u?\w{4}/; // Change this line
+let result = favRegex.test(favWord);
+
+// #29
+
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6,})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);
+
+// #30 
+
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor)\s.*Roosevelt/i; // Change this line
+let result = myRegex.test(myString); // Change this line
+// After passing the challenge experiment with myString and see how the grouping works
+
+// #31
+
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1$/; // Change this line
+let result = reRegex.test(repeatNum);
+
+// #32
+
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+let replaceText = "$3 $2 $1"; // Change this line
+let result = str.replace(fixRegex, replaceText);
+
+// #33
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line
+
