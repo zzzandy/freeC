@@ -15,4 +15,6 @@ const rps = (p1, p2) => {
   };
   
   
-  
+  function circleArea(circle){
+    return Math.PI * circle.radius ** 2
+  }
