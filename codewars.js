@@ -22,3 +22,7 @@ const rps = (p1, p2) => {
   const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return (distanceToPump <= mpg * fuelLeft) ? true : false
     }
+
+    function toBinary(n){
+        return +n.toString(2);
+      }
