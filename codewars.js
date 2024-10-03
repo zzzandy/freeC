@@ -18,3 +18,7 @@ const rps = (p1, p2) => {
   function circleArea(circle){
     return Math.PI * circle.radius ** 2
   }
+
+  const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return (distanceToPump <= mpg * fuelLeft) ? true : false
+    }
