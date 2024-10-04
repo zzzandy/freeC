@@ -24,16 +24,25 @@ return (distanceToPump <= mpg * fuelLeft) ? true : false
 }
 
 function toBinary(n){
-    return +n.toString(2);
+return +n.toString(2);
 }
 
 function enough(cap, on, wait) {
-    if(cap >= on + wait) return 0
-    return wait - (cap - on )
-  }
+if(cap >= on + wait) return 0
+return wait - (cap - on )
+}
 
-  function squareSum(numbers){
-    return numbers.reduce((sum, num) => sum + (num * num), 0);
-    
-  }
-  
+function squareSum(numbers){
+return numbers.reduce((sum, num) => sum + (num * num), 0);
+
+}
+
+var min = function(list){
+list.sort((a,b) => a - b)
+return list[0];
+}
+
+var max = function(list){
+list.sort((a,b) => a - b).reverse()
+return list[0];
+}
