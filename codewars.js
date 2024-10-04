@@ -26,3 +26,8 @@ return (distanceToPump <= mpg * fuelLeft) ? true : false
 function toBinary(n){
     return +n.toString(2);
 }
+
+function enough(cap, on, wait) {
+    if(cap >= on + wait) return 0
+    return wait - (cap - on )
+  }
