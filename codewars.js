@@ -31,3 +31,9 @@ function enough(cap, on, wait) {
     if(cap >= on + wait) return 0
     return wait - (cap - on )
   }
+
+  function squareSum(numbers){
+    return numbers.reduce((sum, num) => sum + (num * num), 0);
+    
+  }
+  
