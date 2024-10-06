@@ -64,3 +64,8 @@ function countPositivesSumNegatives(input) {
   function sayHello(name) {
     return `Hello, ${name}` 
   }
+
+  function hero(bullets, dragons){
+    return (dragons * 2 ) <= bullets ? true : false;
+   }
+   
