@@ -46,3 +46,12 @@ var max = function(list){
 list.sort((a,b) => a - b).reverse()
 return list[0];
 }
+
+function countPositivesSumNegatives(input) {
+    if (input == null || input.length == 0) { return [] }
+    let arr = [];
+    arr[0] = input.filter((el) => el > 0).length;
+    arr[1] = input.filter((el) => el < 0).reduce((a, b) => a + b);
+    return arr  
+    
+  }
