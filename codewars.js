@@ -59,3 +59,8 @@ function countPositivesSumNegatives(input) {
   function twoDecimalPlaces(n) {
     return Number(n.toFixed(2))
   }
+
+
+  function sayHello(name) {
+    return `Hello, ${name}` 
+  }
