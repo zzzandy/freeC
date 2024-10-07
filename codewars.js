@@ -75,3 +75,8 @@ return this.split('')
     .map((el) => el === el.toUpperCase() ? el.toLowerCase(): el.toUpperCase())
     .join('')
 }
+
+function basicOp(operation, value1, value2){
+    let formula = value1 + operation + value2; 
+    return eval(formula)
+  }
