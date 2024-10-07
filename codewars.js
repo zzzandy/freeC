@@ -80,3 +80,7 @@ function basicOp(operation, value1, value2){
     let formula = value1 + operation + value2; 
     return eval(formula)
   }
+
+  function divisibleBy(numbers, divisor){
+    return numbers.filter((el) => el % divisor == 0 )
+  }
