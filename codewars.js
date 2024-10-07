@@ -103,3 +103,7 @@ function basicOp(operation, value1, value2){
     quantity = quantity - Math.floor(quantity / 3);
     return quantity * price;
   }
+
+  function printArray(array){
+    return array.join(',')
+  }
