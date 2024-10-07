@@ -98,3 +98,8 @@ function basicOp(operation, value1, value2){
       return length * width * height
     }
   }
+
+  function mango(quantity, price){
+    quantity = quantity - Math.floor(quantity / 3);
+    return quantity * price;
+  }
