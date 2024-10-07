@@ -89,3 +89,6 @@ function basicOp(operation, value1, value2){
     return `${firstName} ${lastName}`
   }
   
+  function arrayPlusArray(arr1, arr2) {
+    return arr1.concat(arr2).reduce((acc,el) => acc + el, 0);
+  }
