@@ -48,24 +48,30 @@ return list[0];
 }
 
 function countPositivesSumNegatives(input) {
-    if (input == null || input.length == 0) { return [] }
-    let arr = [];
-    arr[0] = input.filter((el) => el > 0).length;
-    arr[1] = input.filter((el) => el < 0).reduce((a, b) => a + b);
-    return arr  
-    
-  }
+if (input == null || input.length == 0) { return [] }
+let arr = [];
+arr[0] = input.filter((el) => el > 0).length;
+arr[1] = input.filter((el) => el < 0).reduce((a, b) => a + b);
+return arr  
 
-  function twoDecimalPlaces(n) {
-    return Number(n.toFixed(2))
-  }
+}
+
+function twoDecimalPlaces(n) {
+return Number(n.toFixed(2))
+}
 
 
-  function sayHello(name) {
-    return `Hello, ${name}` 
-  }
+function sayHello(name) {
+return `Hello, ${name}` 
+}
 
-  function hero(bullets, dragons){
-    return (dragons * 2 ) <= bullets ? true : false;
-   }
-   
+function hero(bullets, dragons){
+return (dragons * 2 ) <= bullets ? true : false;
+}
+
+String.prototype.toAlternatingCase = function () {
+
+return this.split('')
+    .map((el) => el === el.toUpperCase() ? el.toLowerCase(): el.toUpperCase())
+    .join('')
+}
