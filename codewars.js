@@ -92,3 +92,9 @@ function basicOp(operation, value1, value2){
   function arrayPlusArray(arr1, arr2) {
     return arr1.concat(arr2).reduce((acc,el) => acc + el, 0);
   }
+
+  class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+      return length * width * height
+    }
+  }
