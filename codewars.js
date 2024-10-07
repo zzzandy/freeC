@@ -84,3 +84,8 @@ function basicOp(operation, value1, value2){
   function divisibleBy(numbers, divisor){
     return numbers.filter((el) => el % divisor == 0 )
   }
+
+  function combineNames(firstName, lastName){ 
+    return `${firstName} ${lastName}`
+  }
+  
