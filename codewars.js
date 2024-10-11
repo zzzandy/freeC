@@ -124,3 +124,7 @@ function basicOp(operation, value1, value2){
   function xor(a, b) {
     return (a !== b) ? true : false
   }
+
+  function validateCode (code) {
+    return /^[0-3]/.test(String(code))
+    }
