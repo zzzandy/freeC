@@ -111,3 +111,8 @@ function basicOp(operation, value1, value2){
   function move (position, roll) {
     return position + roll * 2
   }
+
+  function contamination(text, char){
+    if(text || char) return char.repeat(text.length)
+    return ''
+  }
