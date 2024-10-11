@@ -116,3 +116,7 @@ function basicOp(operation, value1, value2){
     if(text || char) return char.repeat(text.length)
     return ''
   }
+
+  function reverse(string){
+    return string.split(' ').reverse().join(' ')
+  }
