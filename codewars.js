@@ -107,3 +107,7 @@ function basicOp(operation, value1, value2){
   function printArray(array){
     return array.join(',')
   }
+
+  function move (position, roll) {
+    return position + roll * 2
+  }
