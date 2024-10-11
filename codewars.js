@@ -120,3 +120,7 @@ function basicOp(operation, value1, value2){
   function reverse(string){
     return string.split(' ').reverse().join(' ')
   }
+
+  function xor(a, b) {
+    return (a !== b) ? true : false
+  }
