@@ -128,3 +128,7 @@ function basicOp(operation, value1, value2){
   function validateCode (code) {
     return /^[0-3]/.test(String(code))
     }
+
+    function sumMix(x){
+      return x.reduce((acc, cur) => Number(acc) + Number(cur))
+      }   
